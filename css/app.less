@@ -15,16 +15,19 @@
 //@grid-gutter-width: 0;
 @fu-color-main: #418689;
 @fu-color-main-2: lighten(@fu-color-main, 5%);
+@fu-color-main-3: lighten(@fu-color-main, 30%);
 @fu-color-secondary: #FF7419;
 @fu-color-light-1: darken(white, 20%);
 @font-family-sans-serif: 'Droid Sans', sans-serif;
 @font-family-cursive: 'Architects Daughter', cursive;
 
-body {
+html, body {
 	font-family: @font-family-sans-serif;
 }
 
 nav {
+	margin-bottom: 0;
+
 	.navbar-brand {
 		font-size: 2em;
 		font-family: @font-family-cursive;
@@ -74,7 +77,29 @@ section {
 		}
 
 	}
+
+
+	.fu-share {
+		text-align: center;
+		height: 85vh;
+		border: 5px dotted @fu-color-main-3;
+		position: relative;
+		.fu-icon {
+			width: 50%;
+			height: 50%;
+			overflow: auto;
+			margin: auto;
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+			i {
+				color: @fu-color-secondary;
+			}
+		}
+	}
+
+
 }
+
 
 .btn {
 	&:focus { outline: 0;	}

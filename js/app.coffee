@@ -3,7 +3,32 @@ app = angular.module('FuApp', [
 	'ngRoute'
 ])
 
+app.config ($routeProvider, $locationProvider) ->
+	$routeProvider
+	.when('/', {
+		templateUrl: 'partials/home.html'
+	})
+	.when('/profile', {
+		templateUrl: 'partials/profile.html'
+	})
+	.when('/about', {
+		templateUrl: 'partials/about.html'
+	})
+	.when('/share', {
+		templateUrl: 'partials/share.html'
+		controller: "ShareCtrl"
+		controllerAs: "share"
+	})
+	.otherwise({
+		redirectTo: '/'
+	})
+
 app.controller 'FuAppCtrl', ($interval) ->
-	@temp = "Hello"
+	@loggedIn = true
+
+	return
+
+app.controller 'ShareCtrl', () ->
+	@temp = "hi"
 
 	return
