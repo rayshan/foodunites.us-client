@@ -5827,26 +5827,42 @@ nav .navbar-brand {
   font-size: 2em;
   font-family: 'Architects Daughter', cursive;
 }
-section .dual-img-box .well {
+nav .fu-nav-icon {
+  display: inline-block;
+  width: 2ch;
+  text-align: center;
+}
+section {
+  margin-top: -5px;
+}
+section .fu-dual-img-box .well {
   margin: 5px 0 5px 0;
 }
-section .dual-img-box .img {
-  margin: 0 -5px 0 -5px;
-}
-section .dual-img-box .img .left,
-section .dual-img-box .img .right {
+section .fu-dual-img-box .left,
+section .fu-dual-img-box .right {
   position: relative;
   float: left;
   width: 50%;
   min-height: 1px;
-  padding-left: 2.5px;
-  padding-right: 2.5px;
+  padding-left: 0;
+  padding-right: 0;
 }
-section .dual-img-box .img .left {
+section .fu-dual-img-box .left {
+  margin-left: -5px;
   text-align: right;
 }
-section .dual-img-box .img .right {
+section .fu-dual-img-box .right {
+  right: -7px;
   text-align: left;
+}
+section .fu-dual-img-box .fu-profile {
+  padding-top: 5px;
+}
+section .fu-dual-img-box .fu-profile .fu-profile-img img {
+  height: 5vh;
+}
+section .fu-dual-img-box .fu-distance .fu-map {
+  width: 100%;
 }
 .btn:focus {
   outline: 0;

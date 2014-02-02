@@ -29,28 +29,50 @@ nav {
 		font-size: 2em;
 		font-family: @font-family-cursive;
 	}
+
+	.fu-nav-icon {
+		display: inline-block;
+		width: 2ch;
+		text-align: center;
+	}
+
 }
 
 section {
-	.dual-img-box {
+	margin-top: -5px;
+
+	.fu-dual-img-box {
 
 		.well {
 			margin: 5px 0 5px 0;
 		}
 
-		.img {
-			margin: 0 -5px 0 -5px;
+		.left, .right{
+			.make-xs-column(6, 0);
+		}
 
-			.left, .right{
-				.make-xs-column(6, 5px);
-			}
-			.left {
-				text-align: right;
-			}
-			.right {
-				text-align: left;
+		.left {
+			margin-left: -5px;
+			text-align: right;
+		}
+		.right {
+			right: -7px;
+			text-align: left;
+		}
+
+		.fu-profile {
+			padding-top: 5px;
+			.fu-profile-img img {
+				height: 5vh;
 			}
 		}
+
+		.fu-distance {
+			.fu-map {
+				width: 100%;
+			}
+		}
+
 	}
 }
 
