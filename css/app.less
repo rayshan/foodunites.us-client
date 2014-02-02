@@ -13,8 +13,9 @@
 @navbar-default-toggle-icon-bar-bg: white;
 @navbar-default-toggle-hover-bg: @fu-color-main-2;
 //@grid-gutter-width: 0;
-@fu-color-main: #02685e;
-@fu-color-main-2: lighten(#02685e, 5%);
+@fu-color-main: #418689;
+@fu-color-main-2: lighten(@fu-color-main, 5%);
+@fu-color-secondary: #FF7419;
 @fu-color-light-1: darken(white, 20%);
 @font-family-sans-serif: 'Droid Sans', sans-serif;
 @font-family-cursive: 'Architects Daughter', cursive;
@@ -55,4 +56,8 @@ section {
 
 .btn {
 	&:focus { outline: 0;	}
+}
+
+.badge {
+	background-color: @fu-color-secondary;
 }
