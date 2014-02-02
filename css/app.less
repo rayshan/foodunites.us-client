@@ -1,31 +1,58 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 
+@brand-primary: @fu-color-main;
+@navbar-default-bg: @fu-color-main;
+@navbar-default-border: @fu-color-main;
+@navbar-default-toggle-border-color: @fu-color-main-2;
+@navbar-default-link-color: white;
+@navbar-default-link-active-color: white;
+@navbar-default-link-hover-bg: @fu-color-main-2;
+@navbar-default-link-hover-color: @fu-color-light-1;
+@navbar-default-toggle-icon-bar-bg: white;
+@navbar-default-toggle-hover-bg: @fu-color-main-2;
+//@grid-gutter-width: 0;
 @fu-color-main: #02685e;
+@fu-color-main-2: lighten(#02685e, 5%);
+@fu-color-light-1: darken(white, 20%);
+@font-family-sans-serif: 'Droid Sans', sans-serif;
+@font-family-cursive: 'Architects Daughter', cursive;
 
 body {
-	.make-row(@gutter: 0);
-	@font-family-sans-serif: 'Droid Sans', sans-serif;
-	height: 100vh;
+	font-family: @font-family-sans-serif;
 }
 
-.header {
-	.make-row(@gutter: 0);
-
-	position: relative;
-	background-color: @fu-color-main;
-	height: 10vh;
-	color: white;
-	text-align: center;
-	vertical-align: center;
-
-	.nav {
-		width: 50%;
-		height: 50%;
-		overflow: auto;
-		margin: auto;
-		position: absolute;
-		top: 0; bottom: 0; right: 65vw;
+nav {
+	.navbar-brand {
+		font-size: 2em;
+		font-family: @font-family-cursive;
 	}
+}
 
+section {
+	.dual-img-box {
+
+		.well {
+			margin: 5px 0 5px 0;
+		}
+
+		.img {
+			margin: 0 -5px 0 -5px;
+
+			.left, .right{
+				.make-xs-column(6, 5px);
+			}
+			.left {
+				text-align: right;
+			}
+			.right {
+				text-align: left;
+			}
+		}
+	}
+}
+
+.btn {
+	&:focus { outline: 0;	}
 }
