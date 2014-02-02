@@ -1,0 +1,24 @@
+{
+  "name": "foodunites.us",
+  "version": "0.1.0",
+  "homepage": "https://github.com/rayshan/foodunites.us-client",
+  "authors": [
+    "Ray Shan <ray@rayshan.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.0",
+    "angular": "~1.2.10",
+    "angular-route": "~1.2.10",
+    "angular-animate": "~1.2.10",
+    "font-awesome": "~4.0.3"
+  }
+}

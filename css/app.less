@@ -1,0 +1,31 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+@fu-color-main: #02685e;
+
+body {
+	.make-row(@gutter: 0);
+	@font-family-sans-serif: 'Droid Sans', sans-serif;
+	height: 100vh;
+}
+
+.header {
+	.make-row(@gutter: 0);
+
+	position: relative;
+	background-color: @fu-color-main;
+	height: 10vh;
+	color: white;
+	text-align: center;
+	vertical-align: center;
+
+	.nav {
+		width: 50%;
+		height: 50%;
+		overflow: auto;
+		margin: auto;
+		position: absolute;
+		top: 0; bottom: 0; right: 65vw;
+	}
+
+}
