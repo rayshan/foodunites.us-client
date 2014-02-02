@@ -24,8 +24,26 @@
     this.loggedIn = true;
   });
 
-  app.controller('ShareCtrl', function() {
-    this.temp = "hi";
+  app.controller('ShareCtrl', function($timeout) {
+    this.step = "upload";
+    this.upload = function() {
+      this.step = "pick";
+    };
+    this.pick = function() {
+      this.step = "uploading";
+    };
+    this.uploading = function() {
+      this.step = "tag";
+    };
+    this.tag = function() {
+      this.step = "match";
+    };
+    this.match = function() {
+      this.step = "mashup";
+    };
+    this.mashup = function() {
+      this.step = "done";
+    };
   });
 
 }).call(this);

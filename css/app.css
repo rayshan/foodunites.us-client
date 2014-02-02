@@ -5860,21 +5860,22 @@ section .fu-dual-img-box .right {
   text-align: left;
 }
 section .fu-dual-img-box .fu-profile {
-  padding-top: 5px;
+  padding: 5px 5px 0 5px;
 }
 section .fu-dual-img-box .fu-profile .fu-profile-img img {
-  height: 5vh;
+  height: 8vh;
 }
 section .fu-dual-img-box .fu-distance .fu-map {
+  margin: 5px 0 5px 0;
   width: 100%;
 }
-section .fu-share {
+section .fu-share .fu-share-upload {
   text-align: center;
   height: 85vh;
   border: 5px dotted #96cbcd;
   position: relative;
 }
-section .fu-share .fu-icon {
+section .fu-share .fu-share-upload .fu-icon {
   width: 50%;
   height: 50%;
   overflow: auto;
@@ -5885,12 +5886,62 @@ section .fu-share .fu-icon {
   bottom: 0;
   right: 0;
 }
-section .fu-share .fu-icon i {
-  color: #ff7419;
+section .fu-share .fu-share-upload .fu-icon i {
+  color: #e65524;
+}
+section .fu-share .fu-share-pick {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+section .fu-share .fu-share-pick img {
+  width: 100vw;
+  height: 100vh;
+}
+section .fu-share .fu-share-uploading {
+  text-align: center;
+}
+section .fu-share .fu-share-uploading .progress {
+  margin-top: 35vh;
+}
+section .fu-share .fu-share-tag .thumbnail {
+  width: 100%;
+}
+section .fu-share .fu-share-tag .input-group {
+  margin: 5px 0 5px 0;
+}
+section .fu-share .fu-share-match {
+  text-align: center;
+  height: 85vh;
+  position: relative;
+}
+section .fu-share .fu-share-match .fu-icon {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+section .fu-share .fu-share-match i {
+  color: #418689;
+}
+section .fu-profile .img-circle.large {
+  width: 25vw;
+}
+section .fu-profile h4 {
+  color: #418689;
+  margin-top: 10px;
+}
+section .fu-profile .fa-dot-circle-o {
+  color: #e65524;
 }
 .btn:focus {
   outline: 0;
 }
 .badge {
-  background-color: #ff7419;
+  background-color: #e65524;
 }

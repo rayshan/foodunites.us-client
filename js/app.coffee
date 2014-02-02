@@ -28,7 +28,14 @@ app.controller 'FuAppCtrl', ($interval) ->
 
 	return
 
-app.controller 'ShareCtrl', () ->
-	@temp = "hi"
+app.controller 'ShareCtrl', ($timeout) ->
+	@step = "upload"
+
+	@upload = -> @step = "pick"; return
+	@pick = -> @step = "uploading"; return
+	@uploading = -> @step = "tag"; return
+	@tag = -> @step = "match"; return
+	@match = -> @step = "mashup"; return
+	@mashup = -> @step = "done"; return
 
 	return

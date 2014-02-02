@@ -16,7 +16,7 @@
 @fu-color-main: #418689;
 @fu-color-main-2: lighten(@fu-color-main, 5%);
 @fu-color-main-3: lighten(@fu-color-main, 30%);
-@fu-color-secondary: #FF7419;
+@fu-color-secondary: #e65524;
 @fu-color-light-1: darken(white, 20%);
 @font-family-sans-serif: 'Droid Sans', sans-serif;
 @font-family-cursive: 'Architects Daughter', cursive;
@@ -64,37 +64,100 @@ section {
 		}
 
 		.fu-profile {
-			padding-top: 5px;
+			padding: 5px 5px 0 5px;
 			.fu-profile-img img {
-				height: 5vh;
+				height: 8vh;
 			}
 		}
 
 		.fu-distance {
 			.fu-map {
+				margin: 5px 0 5px 0;
 				width: 100%;
 			}
 		}
 
 	}
 
-
 	.fu-share {
-		text-align: center;
-		height: 85vh;
-		border: 5px dotted @fu-color-main-3;
-		position: relative;
-		.fu-icon {
-			width: 50%;
-			height: 50%;
-			overflow: auto;
-			margin: auto;
-			position: absolute;
-			top: 0; left: 0; bottom: 0; right: 0;
-			i {
-				color: @fu-color-secondary;
+		.fu-share-upload {
+			text-align: center;
+			height: 85vh;
+			border: 5px dotted @fu-color-main-3;
+			position: relative;
+			.fu-icon {
+				width: 50%;
+				height: 50%;
+				overflow: auto;
+				margin: auto;
+				position: absolute;
+				top: 0; left: 0; bottom: 0; right: 0;
+				i {
+					color: @fu-color-secondary;
+				}
 			}
 		}
+
+		.fu-share-pick {
+			position: fixed;
+			top: 0;
+			left: 0;
+			img {
+				width: 100vw;
+				height: 100vh;
+			}
+		}
+
+		.fu-share-uploading {
+			text-align: center;
+			.progress {
+				margin-top: 35vh;
+			}
+		}
+
+		.fu-share-tag {
+			.thumbnail {
+				width: 100%;
+			}
+
+			.input-group {
+				margin: 5px 0 5px 0;
+			}
+		}
+
+
+		.fu-share-match {
+			text-align: center;
+			height: 85vh;
+			position: relative;
+			.fu-icon {
+				width: 50%;
+				height: 50%;
+				overflow: auto;
+				margin: auto;
+				position: absolute;
+				top: 0; left: 0; bottom: 0; right: 0;
+			}
+			i {
+				color: @fu-color-main;
+			}
+		}
+
+
+
+
+
+	}
+
+	.fu-profile {
+		.img-circle.large {
+			width: 25vw;
+		}
+		h4 {
+			color: @fu-color-main;
+			margin-top: 10px;
+		}
+		.fa-dot-circle-o {color: @fu-color-secondary}
 	}
 
 
