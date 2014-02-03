@@ -1,4 +1,5 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/less-prefixer/prefixer.less";
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
 
@@ -13,10 +14,10 @@
 @navbar-default-toggle-icon-bar-bg: white;
 @navbar-default-toggle-hover-bg: @fu-color-main-2;
 //@grid-gutter-width: 0;
-@fu-color-main: #418689;
+@fu-color-main: #e65524;
 @fu-color-main-2: lighten(@fu-color-main, 5%);
 @fu-color-main-3: lighten(@fu-color-main, 30%);
-@fu-color-secondary: #e65524;
+@fu-color-secondary: #418689;
 @fu-color-light-1: darken(white, 20%);
 @font-family-sans-serif: 'Droid Sans', sans-serif;
 @font-family-cursive: 'Architects Daughter', cursive;
@@ -110,6 +111,8 @@ section {
 
 		.fu-share-uploading {
 			text-align: center;
+			vertical-align: middle;
+			height: 100vh;
 			.progress {
 				margin-top: 35vh;
 			}
@@ -128,7 +131,7 @@ section {
 
 		.fu-share-match {
 			text-align: center;
-			height: 85vh;
+			height: 100vh;
 			position: relative;
 			.fu-icon {
 				width: 50%;
@@ -170,4 +173,22 @@ section {
 
 .badge {
 	background-color: @fu-color-secondary;
+}
+
+
+
+.animate-switch.ng-animate {
+	.transition(all 0.5s linear);
+
+}
+
+.animate-switch.ng-leave.ng-leave-active,
+.animate-switch.ng-enter {
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}
+.animate-switch.ng-leave,
+.animate-switch.ng-enter.ng-enter-active {
+	filter: blur(0);
+	-webkit-filter: blur(0);
 }
