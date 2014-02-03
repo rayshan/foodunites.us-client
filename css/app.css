@@ -5958,6 +5958,9 @@ section .fu-share .fu-share-tag .thumbnail {
 section .fu-share .fu-share-tag .input-group {
   margin: 5px 0 5px 0;
 }
+section .fu-share .fu-share-tag .fa-globe {
+  color: #418689;
+}
 section .fu-share .fu-share-match {
   text-align: center;
   height: 100vh;
@@ -5979,6 +5982,10 @@ section .fu-share .fu-share-match i {
 }
 section .fu-profile .img-circle.large {
   width: 25vw;
+}
+section .fu-profile .img-circle.small {
+  width: 10vw;
+  border: 1px #D3D3D3 solid;
 }
 section .fu-profile h4 {
   color: #e65524;
