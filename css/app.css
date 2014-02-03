@@ -5985,13 +5985,14 @@ section .fu-profile h4 {
   margin-top: 10px;
 }
 section .fu-profile .fa-dot-circle-o {
-  color: #418689;
+  color: #e65524;
 }
 .btn:focus {
   outline: 0;
 }
 .badge {
-  background-color: #418689;
+  color: white !important;
+  background-color: #418689 !important;
 }
 .animate-switch.ng-animate {
   -webkit-transition: all 0.5s linear;
